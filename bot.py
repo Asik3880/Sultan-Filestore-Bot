@@ -72,22 +72,16 @@ async def start(bot: Client, cmd: Message):
             Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
-                    ]
-                ]
-            )
-        )
+                        [
+                            [
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                            ],
+                            [
+                                InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
+                            ]
+                        ]
+                    )
+                )
     else:
         try:
             try:
@@ -352,22 +346,16 @@ async def button(bot: Client, cmd: CallbackQuery):
             Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
-                    ],
-                    [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
-                    ]
-                ]
-            )
-        )
+                        [
+                            [
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                            ],
+                            [
+                                InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
+                            ]
+                        ]
+                    )
+                )
 
     elif "refreshForceSub" in cb_data:
         if Config.UPDATES_CHANNEL:
@@ -409,18 +397,16 @@ async def button(bot: Client, cmd: CallbackQuery):
             text=Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
-                    ]
-                ]
-            )
-        )
+                        [
+                            [
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                            ],
+                            [
+                                InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
+                            ]
+                        ]
+                    )
+                )
 
     elif cb_data.startswith("ban_user_"):
         user_id = cb_data.split("_", 2)[-1]
