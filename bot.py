@@ -310,36 +310,32 @@ async def button(bot: Client, cmd: CallbackQuery):
             Config.ABOUT_BOT_TEXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
-                    ],
-                    [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
-                    ]
-                ]
-            )
-        )
+                        [
+                            [
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                            ],
+                            [
+                                InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
+                            ]
+                        ]
+                    )
+                )
 
     elif "aboutdevs" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_DEV_TEXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
-                    ],
-                    [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
-                    ]
-                ]
-            )
-        )
+                        [
+                            [
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                            ],
+                            [
+                                InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
+                            ]
+                        ]
+                    )
+                )
 
     elif "gotohome" in cb_data:
         await cmd.message.edit(
