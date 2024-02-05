@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
+                                InlineKeyboardButton("🔰 Movies Channel 🔰", url="https://t.me/+boRxJo-bpWY0OGNl")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -312,7 +312,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
+                                InlineKeyboardButton("🔰 Movies Channel 🔰", url="https://t.me/+boRxJo-bpWY0OGNl")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -328,7 +328,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
+                                InlineKeyboardButton("🔰 Movies Channel 🔰", url="https://t.me/+boRxJo-bpWY0OGNl")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -344,7 +344,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
+                                InlineKeyboardButton("🔰 Movies Channel 🔰", url="https://t.me/+boRxJo-bpWY0OGNl")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -395,7 +395,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
+                                InlineKeyboardButton("🔰 Movies Channel 🔰", url="https://t.me/+boRxJo-bpWY0OGNl")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
