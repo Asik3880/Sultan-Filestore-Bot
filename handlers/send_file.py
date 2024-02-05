@@ -8,10 +8,8 @@ from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
     try:
-        loading_message = await message.reply(
-            f"**please wait....**\n",
-            disable_web_page_preview=True, quote=True)
-            await asyncio.sleep(0.1)
+        loading_message = await message.reply("⋘ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗮𝘁𝘂𝘀 ⋙")
+        await asyncio.sleep(1)
     except FloodWait as e:
         await reply_forward(message, file_id)
         await loading_message.delete()
