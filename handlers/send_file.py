@@ -7,12 +7,12 @@ from handlers.helpers import str_to_b64
 
 
 async def reply_forward(message: Message, file_id: int):
-    try:
-        m=await message.reply_text(".")
-        await asyncio.sleep(1)
+#    try:
+#        m=await message.reply_text(".")
+#        await asyncio.sleep(1)
     except FloodWait as e:
         await reply_forward(message, file_id)
-        await m.delete()
+#        await m.delete()
 
 async def media_forward(bot: Client, user_id: int, file_id: int):
     try:
