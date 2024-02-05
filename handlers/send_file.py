@@ -8,14 +8,13 @@ from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
     try:
-        m=await message.reply_text(
+        loading_message = await message.reply(
             f"**please wait....**\n",
             disable_web_page_preview=True, quote=True)
+            await asyncio.sleep(0.1)
     except FloodWait as e:
-        await asyncio.sleep(0.1)
-        await m.delete()
         await reply_forward(message, file_id)
-
+        await loading_message.delete()
 
 async def media_forward(bot: Client, user_id: int, file_id: int):
     try:
