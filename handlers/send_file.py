@@ -9,7 +9,7 @@ from handlers.helpers import str_to_b64
 async def reply_forward(message: Message, file_id: int):
     try:
         await message.reply_text(
-            f"**Files will be Deleted After 30 min ⏰**\n",
+          #  f"**Files will be Deleted After 30 min ⏰**\n",
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
         await asyncio.sleep(e.value)
@@ -29,8 +29,8 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
         return media_forward(bot, user_id, file_id)
 
 
-#async def delete_file(file_id: int):
-#    await asyncio.sleep(300)  # wait for 30 minutes
+async def delete_file(file_id: int):
+    await asyncio.sleep(300)  # wait for 30 minutes
 
 async def send_media_and_reply(bot: Client, user_id: int, file_id: int):
     sent_message = await media_forward(bot, user_id, file_id)
