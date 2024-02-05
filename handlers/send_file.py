@@ -8,11 +8,12 @@ from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
     try:
-        await message.reply_text(
+        m=await message.reply_text(
             f"**please wait....**\n",
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
         await asyncio.sleep(0.1)
+        await m.delete()
         await reply_forward(message, file_id)
 
 
