@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -118,7 +118,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/TeleRoid14)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/Filmymod7)",
                                      disable_web_page_preview=True)
             return
 
@@ -312,7 +312,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -328,7 +328,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -344,7 +344,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
@@ -363,7 +363,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/Filmymod7).",
                         disable_web_page_preview=True
                     )
                     return
@@ -385,7 +385,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/Filmymod7).",
                     disable_web_page_preview=True
                 )
                 return
@@ -395,7 +395,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/FilmymodMovies")
+                                InlineKeyboardButton("🔰 Movies Group 🔰", url="https://t.me/mini_netflix_official")
                             ],
                             [
                                 InlineKeyboardButton("💢 Close 💢", callback_data="closeMessage")
