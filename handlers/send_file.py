@@ -8,11 +8,11 @@ from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
     try:
-        loading_message = await message.reply("⋘ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗮𝘁𝘂𝘀 ⋙")
-        await asyncio.sleep(1)
+       # loading_message = await message.reply("⋘ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗮𝘁𝘂𝘀 ⋙")
+       # await asyncio.sleep(1)
     except FloodWait as e:
         await reply_forward(message, file_id)
-        await loading_message.delete()
+       # await loading_message.delete()
 
 async def media_forward(bot: Client, user_id: int, file_id: int):
     try:
