@@ -8,7 +8,7 @@ from handlers.helpers import str_to_b64
 
 async def reply_forward(message: Message, file_id: int):
     try:
-        m=await message.reply_text("⋘ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗮𝘁𝘂𝘀 ⋙")
+        m=await message.reply_text(".")
         await asyncio.sleep(1)
     except FloodWait as e:
         await reply_forward(message, file_id)
